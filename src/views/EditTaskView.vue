@@ -3,9 +3,7 @@
     <v-container>
       <v-row class="text-center">
         <v-col class="mb-4">
-          <h1 class="display-2 font-weight-bold mb-3">
-            Task Management System
-          </h1>
+          <h1 class="display-2 font-weight-bold mb-3">Edit Task {{ id }}</h1>
         </v-col>
       </v-row>
     </v-container>
@@ -14,6 +12,14 @@
 
 <script>
 export default {
-  name: "HomeView",
+  name: "EditTaskView",
+  data() {
+    return {
+      id: "",
+    };
+  },
+  created() {
+    this.id = this.$route.params.id;
+  },
 };
 </script>
