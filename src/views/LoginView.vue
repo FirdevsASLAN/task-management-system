@@ -13,6 +13,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "LoginView",
   data() {
@@ -22,6 +24,13 @@ export default {
   },
   methods: {
     login() {
+      axios
+        .post("http://localhost:5001/api/auth/login", { email: this.email })
+        .then(({ data }) => {
+          console.log(data.payload);
+          this.$router.push("/all-tasks");
+        })
+        .catch((err) => alert(err));
       console.log(this.email);
       this.email = "";
     },
