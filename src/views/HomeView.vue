@@ -6,6 +6,7 @@
           <h1 class="display-2 font-weight-bold mb-3">
             Task Management System
           </h1>
+          <p>Deneme123</p>
         </v-col>
       </v-row>
     </v-container>

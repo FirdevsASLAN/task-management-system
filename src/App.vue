@@ -22,9 +22,40 @@
       </div>
 
       <v-spacer></v-spacer>
-      <router-link class="white--text" :to="'/all-tasks'"
-        >All Tasks</router-link
-      >
+      <v-btn text class="mr-6">
+        <router-link
+          class="white--text text-decoration-none"
+          :to="'/all-tasks'"
+        >
+          All Tasks
+        </router-link>
+      </v-btn>
+      <v-btn text class="mr-6">
+        <router-link class="white--text text-decoration-none" :to="'/my-tasks'">
+          My Tasks
+        </router-link>
+      </v-btn>
+      <v-btn text class="mr-6">
+        <router-link
+          class="white--text text-decoration-none"
+          :to="'/new-tasks'"
+        >
+          New Tasks
+        </router-link>
+      </v-btn>
+      <v-btn text class="mr-6">
+        <router-link
+          class="white--text text-decoration-none"
+          :to="'/Pending-tasks'"
+        >
+          Pendind Tasks
+        </router-link>
+      </v-btn>
+      <v-btn text class="mr-6">
+        <router-link class="white--text text-decoration-none" :to="'/login'">
+          Login
+        </router-link>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
