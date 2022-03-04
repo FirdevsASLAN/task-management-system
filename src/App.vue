@@ -46,9 +46,9 @@
       <v-btn text class="mr-6">
         <router-link
           class="white--text text-decoration-none"
-          :to="'/Pending-tasks'"
+          :to="'/pending-tasks'"
         >
-          Pendind Tasks
+          Pending Tasks
         </router-link>
       </v-btn>
       <v-btn text class="mr-6">

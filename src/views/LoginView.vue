@@ -28,6 +28,9 @@ export default {
         .post("http://localhost:5001/api/auth/login", { email: this.email })
         .then(({ data }) => {
           console.log(data.payload);
+          axios.defaults.headers.common[
+            "Authorization"
+          ] = `Bearer ${data.payload.jwtToken}`;
           this.$router.push("/all-tasks");
         })
         .catch((err) => alert(err));
